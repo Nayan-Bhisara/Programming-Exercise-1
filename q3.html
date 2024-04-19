@@ -1,0 +1,18 @@
+<script type="text/javascript">
+    
+    const largest = () => {
+        let arr = [3, 12, 10, 8, 7]
+        let max = 0;
+        let secmax = 0;
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] > max) {
+                max = arr[i];
+            } else if (arr[i] > secmax && arr[i] < max) {
+                secmax = arr[i]
+            }
+        }
+        console.log(secmax);
+    }
+    largest();
+
+</script>
